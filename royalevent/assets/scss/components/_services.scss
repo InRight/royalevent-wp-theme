@@ -1,0 +1,30 @@
+.elementor-widget-cherry_services {
+	.title_wrap {
+		font-size: 18px;
+		font-weight: 700;
+		letter-spacing: 0.1em;
+		line-height: 1.2;
+		text-transform: uppercase;
+		position: relative;
+
+		a {
+			color: #80826a;
+			&:hover {
+				color: #ff915c;
+			}
+		}
+
+		&::after {
+			content: '';
+			display: inline-block;
+			width: 111px;
+			height: 2px;
+			background-color: #a6a799;
+			margin: 17px 3px 22px;
+		}
+	}
+
+	.content_wrap {
+		color: #919191;
+	}
+}

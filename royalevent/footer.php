@@ -16,6 +16,18 @@
 
 		</div><!-- #content -->
 
+		<?php 
+		// If enabled Elementor Header Footer plugin
+		if ( function_exists( 'hfe_render_footer' ) ) {
+			hfe_render_footer();
+		}
+		?>
+
+		<?php
+		// If enabled Elementor Header Footer plugin
+		if ( ! function_exists( 'hfe_render_footer' ) ) :
+		?>
+
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="wrap">
 				<?php
@@ -39,6 +51,12 @@
 				?>
 			</div><!-- .wrap -->
 		</footer><!-- #colophon -->
+
+		<?php
+		// End If enabled Elementor Header Footer plugin
+		endif;
+		?>
+		
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->
 <?php wp_footer(); ?>

@@ -584,3 +584,10 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+// Support for Elementor Header Footer plugin
+function royalevent_header_footer_elementor_support() {
+	add_theme_support( 'header-footer-elementor' );
+}
+
+add_action( 'after_setup_theme', 'royalevent_header_footer_elementor_support' );

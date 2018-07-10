@@ -1,0 +1,120 @@
+.tm-testi {
+	.tm-testi--default {
+		blockquote {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.tm-testi__item-avatar {
+			align-self: auto;
+			margin: 0 0 10px;
+			border-radius: 50%;
+			border: 8px solid #f2f1ec;
+			box-sizing: content-box;
+			margin-bottom: -51px;
+			position: relative;
+			z-index: 1;
+		}
+
+		.tm-testi__item-body {
+			background-color: #fff;
+			padding: 60px 0 0;
+			text-align: center;
+
+			p {
+				font-size: 20px;
+				font-weight: 700;
+				color: #808369;
+				line-height: 1.65;
+				font-style: normal;
+				padding: 20px 140px;
+				margin-bottom: 23px;
+
+				@media (max-width: 1024px) {
+					font-size: 18px;
+					padding: 15px 100px;
+				}
+
+				@media (max-width: 768px) {
+					font-size: 15px;
+					padding: 20px 40px;
+					margin-bottom: 16px;
+				}
+			}
+
+			footer {
+				padding: 22px 140px 25px;
+				background-image: url(assets/images/testi_shape.png);
+				background-repeat: no-repeat;
+				background-position: center top;
+
+				@media (max-width: 1024px) {
+					padding: 22px 100px 25px;
+				}
+
+				@media (max-width: 1024px) {
+					padding: 20px 40px;
+				}
+
+				cite {
+					font-size: 14px;
+					font-weight: 400;
+					color: #919191;
+					margin: 0;
+				}
+			}
+		}
+
+		.tm-testi-slider {
+			&__next,
+			&__prev {
+				background-image: none;
+				width: 65px;
+				height: 65px;
+				background-color: #f2f1ec;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0;
+				line-height: 1;
+				margin-top: 15px;
+
+				&::before {
+					font: normal normal normal 14px/1 FontAwesome;
+					font-size: 18px;
+					line-height: 1;
+					color: #808369;
+					transition: 0.3s;
+				}
+
+				&:hover {
+					&::before {
+						color: #434343;
+					}
+				}
+			}
+
+			&__next {
+				transform: translate(50%, -50%);
+				right: -5px;
+
+				&::before {
+					content: '\f105';
+					margin-right: 20px;
+				}
+			}
+
+			&__prev {
+				transform: translate(-50%, -50%);
+				left: -5px;
+
+				&::before {
+					content: '\f104';
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+	
+}
