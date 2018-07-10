@@ -32,7 +32,8 @@
 				top: 0;
 				right: 11px;
 
-				.main-menu & {
+				.main-menu &,
+				.site-menu & {
 					display: none;
 				}
 			}
@@ -85,7 +86,8 @@
 			}
 		}
 
-		.main-menu & {
+		.main-menu &,
+		.site-menu & {
 			&:last-child {
 				a {
 					border-right: none !important;
@@ -153,7 +155,8 @@
 		color: #ffffff;
 	}
 
-	.main-menu & {
+	.main-menu &,
+	.site-menu & {
 		margin: 0;
 		font-size: 0;
 		line-height: 1;
@@ -168,7 +171,8 @@
 }
 
 .elementor-tablet-align-right {
-	&.main-menu {
+	&.main-menu,
+	&.site-menu {
 		@media (max-width: 1024px) {
 			text-align: center !important;
 		}

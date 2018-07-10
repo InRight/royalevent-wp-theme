@@ -4466,6 +4466,12 @@ textarea {
 
 input.search-field {
   padding: 17px 28px 18px;
+  line-height: 1.5;
+}
+
+.search-form .search-submit {
+  width: 52px;
+  height: 52px;
 }
 
 .nav-links a.page-numbers {
@@ -4803,7 +4809,7 @@ h6,
   top: 0;
   right: 11px;
 }
-.main-menu .elementor-navigation .menu-item.menu-item-has-children > a::after {
+.main-menu .elementor-navigation .menu-item.menu-item-has-children > a::after, .site-menu .elementor-navigation .menu-item.menu-item-has-children > a::after {
   display: none;
 }
 @media screen and (min-width: 56.875em) {
@@ -4845,7 +4851,7 @@ h6,
     padding: 8px 0;
   }
 }
-.main-menu .elementor-nav-menu .menu-item:last-child a {
+.main-menu .elementor-nav-menu .menu-item:last-child a, .site-menu .elementor-nav-menu .menu-item:last-child a {
   border-right: none !important;
 }
 .elementor-nav-menu .sub-menu {
@@ -4898,25 +4904,25 @@ h6,
 .elementor-menu-toggle i.fa.fa-navicon {
   color: #ffffff;
 }
-.main-menu .elementor-menu-toggle {
+.main-menu .elementor-menu-toggle, .site-menu .elementor-menu-toggle {
   margin: 0;
   font-size: 0;
   line-height: 1;
   padding: 12px;
 }
-.main-menu .elementor-menu-toggle i.fa.fa-navicon {
+.main-menu .elementor-menu-toggle i.fa.fa-navicon, .site-menu .elementor-menu-toggle i.fa.fa-navicon {
   font-size: 16px;
   width: 16px;
   text-align: center;
 }
 
 @media (max-width: 1024px) {
-  .elementor-tablet-align-right.main-menu {
+  .elementor-tablet-align-right.main-menu, .elementor-tablet-align-right.site-menu {
     text-align: center !important;
   }
 }
 @media (max-width: 768px) {
-  .elementor-tablet-align-right.main-menu {
+  .elementor-tablet-align-right.main-menu, .elementor-tablet-align-right.site-menu {
     text-align: right !important;
   }
 }

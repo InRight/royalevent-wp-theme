@@ -246,4 +246,11 @@
 		$body.addClass( 'has-header-video' );
 	});
 
+	// Menu switch
+	if ($("body").hasClass("home")) {
+		$(".site-menu").remove();
+	} else {
+		$(".main-menu").remove();
+	}
+
 })( jQuery );
